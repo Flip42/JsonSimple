@@ -1,5 +1,7 @@
 # JsonSimple [![Build Status](https://travis-ci.org/Flip42/JsonSimple.svg?branch=master)](https://travis-ci.org/Flip42/JsonSimple)
 
+------
+
 With this Library, you can easily parse a Json String to an Java Object.<br /> 
 All you have to do is:
 
@@ -11,7 +13,7 @@ String value = expression.get("key");	//returns a String
 
 Like this you can parse any Json String you have. In the folowing are some examples.
 
-###Parse Numbers
+### Parse Numbers
 
 ```java
 JsonObject expression = new JsonObject();
@@ -22,7 +24,7 @@ Double number = expression.get("double");	//returns an Double Object
 
 JsonSimple understands any Integer or Double Values signed or unsigned with exponent or without, try it by yourself ;)
 
-###Parse Boolean Values
+### Parse Boolean Values
 
 ```java
 JsonObject expression = new JsonObject();
@@ -30,7 +32,7 @@ expression.interprete(new Context("{\"bool\" : true}"));
 Boolean bool = expression.get("bool");	//returns an Boolean Object
 ```
 
-###Parse Objects
+### Parse Objects
 
 ```java
 JsonObject expression = new JsonObject();
@@ -40,7 +42,7 @@ String value = ((Map)expression.get("outer")).get("inner");	//the inner Object w
 
 If you parse an Object, you get a Map as the inner Object, which held all the inner values.
 
-###Parse Arrays
+### Parse Arrays
 
 ```java
 JsonObject expression = new JsonObject();
