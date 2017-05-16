@@ -2,6 +2,8 @@ package flp.JsonSimple;
 
 import static org.junit.Assert.*;
 
+import java.util.Map;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -18,6 +20,18 @@ public class JsonObjectTest {
 	public void minimalObject() {
 		expression.interprete(new Context("{}"));
 		assertEquals(0, expression.getValue().size());
+	}
+
+	@Test
+	public void minimalObjectWithValues() {
+		expression.interprete(new Context("{\"test\":\"test\"}"));
+		assertEquals("test", expression.get("test"));
+	}
+
+	@Test
+	public void multiObject() {
+		expression.interprete(new Context("{\"outer\":{\"inner\":\"value\"}}"));
+		assertEquals("value", ((Map)expression.get("outer")).get("inner"));
 	}
 
 	@Test
