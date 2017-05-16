@@ -13,7 +13,7 @@ public class PersonTest {
 	public void init() {
 		person = new Person("Name","Nachname",42);
 	}
- 
+
 	@Test
 	public void testAlter() {
 		assertEquals(42,person.getAlter());
