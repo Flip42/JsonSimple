@@ -10,7 +10,7 @@ public class JsonObject implements Expression {
 		values = new HashMap<String, Object>();
 	}
 
-	public Expression interprete(Context context) {
+	public JsonObject interprete(Context context) {
 		if (context.getChar() == '{') {
 			boolean firstElement = true;
 			context.stepForward();
