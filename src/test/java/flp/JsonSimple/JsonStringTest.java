@@ -20,10 +20,21 @@ public class JsonStringTest {
 		assertEquals("key", expression.getValue());
 	}
 
+	@Test(expected=RuntimeException.class)
+	public void failStringJson() {
+		expression.interprete(new Context("{\"key\" : 42 }"));
+	}
+
 	@Test
 	public void minimalQuotes() {
 		expression.interprete(new Context("\"key \\\"test\\\" end\""));
 		assertEquals("key \\\"test\\\" end", expression.getValue());
+	}
+
+	@Test
+	public void escapedSlash() {
+		expression.interprete(new Context("\"key \\test\""));
+		assertEquals("key \\test", expression.getValue());
 	}
 
 	@Test
