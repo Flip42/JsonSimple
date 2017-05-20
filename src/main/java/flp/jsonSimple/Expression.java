@@ -1,4 +1,4 @@
-package flp.JsonSimple;
+package flp.jsonSimple;
 
 public interface Expression {
 	public Expression interprete(Context context);

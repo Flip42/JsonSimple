@@ -1,4 +1,4 @@
-package flp.JsonSimple;
+package flp.jsonSimple;
 
 public class JsonSimple {
 	/**

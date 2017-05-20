@@ -1,4 +1,4 @@
-package flp.JsonSimple;
+package flp.jsonSimple;
 
 public class JsonException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

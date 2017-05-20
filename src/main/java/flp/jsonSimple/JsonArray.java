@@ -1,4 +1,4 @@
-package flp.JsonSimple;
+package flp.jsonSimple;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,12 @@
-package flp.JsonSimple;
+package flp.jsonSimple;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import flp.jsonSimple.Context;
+import flp.jsonSimple.JsonException;
 
 public class JsonContextTest {
 

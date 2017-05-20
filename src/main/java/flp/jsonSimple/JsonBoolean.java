@@ -1,4 +1,4 @@
-package flp.JsonSimple;
+package flp.jsonSimple;
 
 /**
  * This Class parses a Boolean Value

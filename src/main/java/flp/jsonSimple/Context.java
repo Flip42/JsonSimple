@@ -1,4 +1,4 @@
-package flp.JsonSimple;
+package flp.jsonSimple;
 
 /**
  * This Class encapsulates the String with the Json to the Json Parser
