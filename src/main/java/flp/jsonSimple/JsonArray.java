@@ -5,7 +5,7 @@ import java.util.List;
 
 public class JsonArray implements Expression {
 
-	private List<Object> values;
+	private final List<Object> values;
 
 	public JsonArray() {
 		values = new ArrayList<Object>();

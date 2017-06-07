@@ -7,7 +7,7 @@ package flp.jsonSimple;
  */
 public class Context {
 	
-	private String context;
+	private  final String context;
 	private int position;
 
 	public Context(String context) {
