@@ -1,4 +1,4 @@
-package flp.jsonSimple;
+package flp.jsonSimple.parser;
 
 import java.util.*;
 

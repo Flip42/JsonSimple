@@ -3,8 +3,8 @@ package flp.example;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import flp.jsonSimple.Context;
-import flp.jsonSimple.JsonObject;
+import flp.jsonSimple.parser.Context;
+import flp.jsonSimple.parser.JsonObject;
 
 public class JsonMain {
 

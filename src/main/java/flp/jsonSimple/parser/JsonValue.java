@@ -1,4 +1,4 @@
-package flp.jsonSimple;
+package flp.jsonSimple.parser;
 
 /**
  * This Class parses all Values and returns the parsed Values or Objects

@@ -1,7 +1,7 @@
 package flp.example;
 
-import flp.jsonSimple.Context;
-import flp.jsonSimple.JsonObject;
+import flp.jsonSimple.parser.Context;
+import flp.jsonSimple.parser.JsonObject;
 
 public class Person implements SerializableJsonObject {
 
