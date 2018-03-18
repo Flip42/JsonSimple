@@ -1,4 +1,6 @@
-# JsonSimple [![Build Status](https://travis-ci.org/Flip42/JsonSimple.svg?branch=master)](https://travis-ci.org/Flip42/JsonSimple)
+# JsonSimple [![Build Status](https://travis-ci.org/Flip42/JsonSimple.svg?branch=master)](https://travis-ci.org/Flip42/JsonSimple) [![codecov](https://codecov.io/gh/Flip42/JsonSimple/branch/master/graph/badge.svg)](https://codecov.io/gh/Flip42/JsonSimple)
+
+
 
 ------
 
