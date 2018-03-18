@@ -27,20 +27,26 @@ public class JsonBuilder {
 				if (returnType.isPrimitive()) {
 					String returnTypeName = returnType.getTypeName();
 					String value = "";
-					switch (returnTypeName) {
-					case "byte":
-					case "short":
-					case "int":
-					case "char":
-					case "double":
+					if(Arrays.asList("byte","short","int","char","double").contains(returnTypeName)){
 						value = getNumberValue(obj, method);
 						builder.put(variableName, value);
-//						System.out.println("Primitive detected: " + variableName + " (" + returnTypeName
-//								+ ") with value: " + value);
-						break;
-					default:
+					}else{
 						throw new RuntimeException("Primitive " + returnTypeName + " could not be read");
 					}
+//					switch (returnTypeName) {
+//					case "byte":
+//					case "short":
+//					case "int":
+//					case "char":
+//					case "double":
+//						value = getNumberValue(obj, method);
+//						builder.put(variableName, value);
+////						System.out.println("Primitive detected: " + variableName + " (" + returnTypeName
+////								+ ") with value: " + value);
+//						break;
+//					default:
+//						throw new RuntimeException("Primitive " + returnTypeName + " could not be read");
+//					}
 				} else if (String.class.equals(returnType)) {
 					String value = "";
 					value = getStringValue(obj, method);

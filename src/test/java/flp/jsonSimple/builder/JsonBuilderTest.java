@@ -13,7 +13,7 @@ public class JsonBuilderTest {
 	public void minimalJson() {
 		JsonBuilder builder = new JsonBuilder();
 		String json = builder.parse(new Person("Vorname","Name",42));
-		System.out.println(json);
+//		System.out.println(json);
 		assertEquals("{\"_class\":\"flp.example.Person\",\"alter\":42,\"nachname\":\"Name\",\"vorname\":\"Vorname\"}", json);
 	}
 	@Test
