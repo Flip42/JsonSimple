@@ -9,6 +9,7 @@ import java.util.Map;
 import org.junit.Before;
 import org.junit.Test;
 
+import flp.example.Person;
 import flp.jsonSimple.JsonSimple;
 import flp.jsonSimple.parser.JsonObject;
 
@@ -20,6 +21,16 @@ public class JsonSimpleTest {
 	public void minimalJson() {
 		JsonObject expression = JsonSimple.parse("{\"key\" : \"value\"}");
 		assertEquals("value", expression.get("key"));
+	}
+	@Test
+	public void minimalJsonReverse() {
+		JsonObject obj = JsonSimple.getObject("{\"key\" : \"value\"}");
+		assertEquals("value", obj.get("key"));
+	}
+	@Test
+	public void minimalJsonByObject() {
+		String json = JsonSimple.parse(new Person());
+		assertEquals("{\"_class\":\"flp.example.Person\",\"alter\":0,\"nachname\":\"empty\",\"vorname\":\"empty\"}", json);
 	}
 
 	@Test

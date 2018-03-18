@@ -17,14 +17,14 @@ public class JsonSimple {
 	}
 	
 	//TODO Testing and Docu
-	public static Object getObject(String json){
+	public static JsonObject getObject(String json){
 		JsonObject jObject = new JsonObject();
 		JsonObject parsedObject = jObject.interprete(new Context(json));
 		return parsedObject;
 	}
 
 	//TODO Testing and Docu
-	public String parse(Object obj) {
+	public static String parse(Object obj) {
 		JsonBuilder builder = new JsonBuilder();
 		return builder.parse(obj);
 	}
