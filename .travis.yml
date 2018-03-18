@@ -3,6 +3,7 @@ jdk:
   - oraclejdk7
   - oraclejdk8
 sudo: false
+group: deprecated
 script: mvn test
 
 script: "mvn cobertura:cobertura"
