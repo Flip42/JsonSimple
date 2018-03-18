@@ -1,5 +1,6 @@
 package flp.example;
 
+import flp.jsonSimple.SerializableJsonObject;
 import flp.jsonSimple.parser.Context;
 import flp.jsonSimple.parser.JsonObject;
 

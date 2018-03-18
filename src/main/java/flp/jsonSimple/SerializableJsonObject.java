@@ -1,4 +1,4 @@
-package flp.example;
+package flp.jsonSimple;
 
 public interface SerializableJsonObject {
 	
